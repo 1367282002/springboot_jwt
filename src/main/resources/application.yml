@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-jwt
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.216.16:3306/mp
+    username: root
+    password: root
+
+# 日志
+logging:
+  level:
+    com.jwt: debug
+
+mybatis:
+  type-aliases-package: "com.jwt.pojo"
+
+config:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长
+    expire: 3600
+    # header 名称
+    header: token
