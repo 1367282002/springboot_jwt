@@ -8,7 +8,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("com.jwt.mapper")
 public class BootDemoApplication {
     public static void main(String[] args) {
-
+        Integer i = 20;
+        System.out.println(20);
         SpringApplication.run(BootDemoApplication.class);
     }
 }
