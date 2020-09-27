@@ -10,11 +10,7 @@ import java.time.LocalDate;
 @MapperScan("com.jwt.mapper")
 public class BootDemoApplication {
     public static void main(String[] args) {
-        Integer i = 20;
-        System.out.println(20);
-        System.out.println("String");
-        LocalDate l = LocalDate.now();
-        System.out.println(l);
+
         SpringApplication.run(BootDemoApplication.class);
     }
 }
